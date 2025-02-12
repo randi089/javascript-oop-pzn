@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Operator Instanceof</title>
+  </head>
+  <body>
+    <script>
+      class Employee {}
+
+      class Manager extends Employee {}
+
+      const randi = new Employee();
+      const fatwa = new Manager();
+
+      console.info(typeof randi);
+      console.info(typeof fatwa);
+
+      console.info(randi instanceof Employee); // true
+      console.info(randi instanceof Manager); // false
+
+      console.info(fatwa instanceof Employee); // true
+      console.info(fatwa instanceof Manager); // true
+    </script>
+  </body>
+</html>
